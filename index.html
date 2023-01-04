@@ -75,6 +75,59 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-hexo-init" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/01/05/hexo-init/" class="article-date">
+  <time class="dt-published" datetime="2023-01-04T20:55:46.000Z" itemprop="datePublished">2023-01-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/01/05/hexo-init/">hexo blog 搭建</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h1><p><img src="/../images/hexo-init.png" alt="hexo-init"></p>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ol>
+<li>hexo 提供了一个把markdown语法文件（在source目录）转成静态文件（默认是public目录）的工具。</li>
+<li>github-page服务。<ul>
+<li>可以创建一个”&lt;用户名&gt;.github.io”的项目（例如wjs0702cn.github.io），把hexo public目录的内容推送这个项目。 通过”https:&#x2F;&#x2F;&lt;用户名&gt;.github.io” 来访问这些内容。</li>
+</ul>
+</li>
+<li>github-page 提供自定义的域名。 <ul>
+<li>可以通过 <a target="_blank" rel="noopener" href="https://github.com/settings/pages">https://github.com/settings/pages</a> 添加自定义的域名。 这一步需要同步在域名提供商的DNS中设置相应的内容。</li>
+<li>在”&lt;用户名&gt;.github.io”项目中设置CNAME。 CNAME文件中只要填写完整自定义域名（blog.angjs.com）即可。 </li>
+<li>通过验证的域名，可以”&lt;用户名&gt;.github.io”项目的设置中设置”Enforce HTTPS”,设置了以后访问域名会自动跳转到https。 </li>
+<li>自定义域名的https-certificate是github-page服务从Let’s Encrypt中申请的。</li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://blog.angjs.com/2023/01/05/hexo-init/" data-id="clch81vv00000owcj2x9v2zdj" data-title="hexo blog 搭建" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-标记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/01/05/%E6%A0%87%E8%AE%B0/" class="article-date">
@@ -98,63 +151,11 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h1 id="标记"><a href="#标记" class="headerlink" title="标记"></a>标记</h1><h2 id="我的博客"><a href="#我的博客" class="headerlink" title="我的博客"></a>我的博客</h2><p>↑ 这个是我的博客，有自己域名的那种。 还带了数字证书。</p>
-<p>你是吴健？</p>
 
       
     </div>
     <footer class="article-footer">
       <a data-url="https://blog.angjs.com/2023/01/05/%E6%A0%87%E8%AE%B0/" data-id="clch52nmq0000p4cjfdm5gzd5" data-title="标记" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/01/04/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-01-04T04:03:58.976Z" itemprop="datePublished">2023-01-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/01/04/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://blog.angjs.com/2023/01/04/hello-world/" data-id="clch52nmt0001p4cj6dhtc1ah" data-title="Hello World" class="article-share-link">分享</a>
       
       
       
@@ -197,11 +198,11 @@
       <ul>
         
           <li>
-            <a href="/2023/01/05/%E6%A0%87%E8%AE%B0/">标记</a>
+            <a href="/2023/01/05/hexo-init/">hexo blog 搭建</a>
           </li>
         
           <li>
-            <a href="/2023/01/04/hello-world/">Hello World</a>
+            <a href="/2023/01/05/%E6%A0%87%E8%AE%B0/">标记</a>
           </li>
         
       </ul>
